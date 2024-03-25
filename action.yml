@@ -1,0 +1,10 @@
+name: setup-sst
+description: Setup SST CLI, sst, on GitHub Actions runners
+inputs:
+  version:
+    description: Version of SST CLI to install
+    required: false
+    default: 0.0.197
+runs:
+  using: node20
+  main: dist/index.js
